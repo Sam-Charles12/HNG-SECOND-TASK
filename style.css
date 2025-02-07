@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#game-page{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(white, gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 20px; */
+}
+#game-page h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+#Display-box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+#game-page #colorName{
+    height: 50px;
+    width: 150px;
+    color: none;
+}
+#game-page #guess-buttons{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+#game-page #guess-buttons .g-btn-1 {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+#game-page #guess-buttons .g-btn-1 .g-btn{
+    height: 60px;
+    width: 28.2%;
+    border-radius: 10px;
+    border: none;
+}
+#game-page #navigation{
+    display: flex;
+    gap: 20px;
+}
+#game-page #navigation #replay{
+    height: 60px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #415A77;
+    color: white;
+    cursor: pointer;
+}
+#game-page #navigation #replay:hover{
+    background: #1B263B;
+}
+#game-page #navigation #counter{
+    height: 60px;
+    width: 120px;
+    border: none;
+    outline: none;
+    background: #415A77;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+#game-page #word{
+    font-size: 40px;
+}
+.pulse-animate{
+    animation: pulse 1s;
+}
+@keyframes pulse{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    25%{
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    75%{
+        opacity:1 ;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@media only screen and (min-width: 200px){
+    #game-page h1{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    #game-page #guess-buttons{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+    }
+    #game-page #guess-buttons .g-btn-1 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 425px){
+    #game-page h1{
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
+@media only screen and (min-width: 768px){
+    #game-page h1{
+        font-size: 35px;
+        font-weight: 300;
+    } 
+    #game-page #guess-buttons{
+        gap: 30px; 
+    }
+}
+@media only screen and (min-width: 1024px){
+    #game-page h1{
+        font-size: 40px;
+        font-weight: 100;
+    }
+    #game-page #guess-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+}
