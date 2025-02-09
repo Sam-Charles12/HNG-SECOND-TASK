@@ -8,28 +8,28 @@
 </head>
 <body>
     <div id="game-page">
-        <h1>Guess the correct color!</h1>
+        <h1 data-testid="gameInstructions">Guess the correct color!</h1>
         <div id="word"></div>
-        <div id="Display-box"></div>
+        <div data-testid="colorBox" id="Display-box"></div>
         <div id="guess-buttons">
             <div class="g-btn-1">
-                <button class="g-btn" ></button>
-                <button class="g-btn" ></button>
-                <button class="g-btn" ></button>
+                <button data-testid="colorOption" class="g-btn" ></button>
+                <button data-testid="colorOption" class="g-btn" ></button>
+                <button data-testid="colorOption" class="g-btn" ></button>
             </div>
             <div class="g-btn-1">
-                <button class="g-btn"></button>
-                <button class="g-btn" ></button>
-                <button class="g-btn" ></button>
+                <button data-testid="colorOption" class="g-btn"></button>
+                <button data-testid="colorOption" class="g-btn" ></button>
+                <button data-testid="colorOption" class="g-btn" ></button>
             </div>
             
             
         </div>
         <div id="navigation">
             <div id="counter">
-                <p id="score">0</p>
+                <p data-testid="score" id="score">0</p>
             </div>
-            <button id="replay" onclick="replay()">Replay</button>
+            <button data-testid="newGameButton" id="replay" onclick="replay()">Replay</button>
         </div>
     </div>
     <script src="script.js"></script>
